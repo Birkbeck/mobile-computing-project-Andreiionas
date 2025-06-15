@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button android:text="All"/>
+        <Button android:text="Breakfast"/>
+        <Button android:text="Brunch"/>
+        <Button android:text="Lunch"/>
+        <Button android:text="Dinner"/>
+        <Button android:text="Desserts"/>
+        <Button android:text="Other"/>
+    </LinearLayout>
+</HorizontalScrollView>

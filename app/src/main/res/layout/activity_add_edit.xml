@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
     <LinearLayout
         android:orientation="vertical"
@@ -13,36 +13,34 @@
             android:id="@+id/et_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Recipe Title" />
+            android:hint="@string/title_hint" />
 
         <EditText
             android:id="@+id/et_ingredients"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingredients"
-            android:minLines="3"
-            android:gravity="top"
-            android:inputType="textMultiLine" />
+            android:hint="@string/ingredients_hint"
+            android:layout_marginTop="8dp" />
+
+        <!-- New Spinner for category -->
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
 
         <EditText
             android:id="@+id/et_instructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Instructions"
-            android:minLines="4"
-            android:gravity="top"
-            android:inputType="textMultiLine" />
-
-        <Spinner
-            android:id="@+id/spinner_category"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:hint="@string/instructions_hint"
+            android:layout_marginTop="8dp" />
 
         <Button
-            android:id="@+id/btn_save_recipe"
+            android:id="@+id/btn_save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save" />
-
+            android:text="Save"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
 </ScrollView>

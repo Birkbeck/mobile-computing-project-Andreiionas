@@ -2,4 +2,9 @@
     <string name="app_name">CulinaryCompanion</string>
     <string name="add_new_recipe">Add New Recipe</string>
     <string name="recipe_list">List of recipes</string>
+    <string name="title_hint">Enter recipe title</string>
+    <string name="ingredients_hint">Enter ingredients</string>
+    <string name="instructions_hint">Enter cooking instructions</string>
+    <string name="save">Save</string>
+    <string name="add_recipe">Add New Recipe</string>
 </resources>

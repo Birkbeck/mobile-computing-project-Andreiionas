@@ -10,25 +10,25 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/et_recipe_name"
-            android:hint="Recipe Name"
+            android:id="@+id/et_title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Recipe Title" />
 
         <EditText
             android:id="@+id/et_ingredients"
-            android:hint="Ingredients"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minLines="4"
+            android:hint="Ingredients"
+            android:minLines="3"
             android:gravity="top"
             android:inputType="textMultiLine" />
 
         <EditText
             android:id="@+id/et_instructions"
-            android:hint="Instructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Instructions"
             android:minLines="4"
             android:gravity="top"
             android:inputType="textMultiLine" />
@@ -39,9 +39,10 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/btn_save"
+            android:id="@+id/btn_save_recipe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save Recipe" />
+            android:text="Save" />
+
     </LinearLayout>
 </ScrollView>

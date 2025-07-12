@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CulinaryCompanion</string>
+    <string name="add_new_recipe">Add New Recipe</string>
+    <string name="recipe_list">List of recipes</string>
 </resources>

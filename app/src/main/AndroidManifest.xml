@@ -13,10 +13,10 @@
         android:theme="@style/Theme.CulinaryCompanion"
         tools:targetApi="31">
 
-        <activity android:name=".AddEditRecipeActivity" />
+        <activity android:name=".ui.AddEditRecipeActivity" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

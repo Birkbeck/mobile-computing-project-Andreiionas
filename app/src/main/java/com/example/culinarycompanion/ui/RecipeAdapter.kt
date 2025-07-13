@@ -3,6 +3,7 @@ package com.example.culinarycompanion.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.culinarycompanion.R
@@ -15,6 +16,7 @@ class RecipeAdapter(private val listener: OnItemClickListener) :
 
     interface OnItemClickListener {
         fun onItemClick(recipe: Recipe)
+        fun onDeleteClick(recipe: Recipe)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
@@ -26,8 +28,13 @@ class RecipeAdapter(private val listener: OnItemClickListener) :
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
         val currentRecipe = recipes[position]
         holder.titleTextView.text = currentRecipe.title
+
         holder.itemView.setOnClickListener {
             listener.onItemClick(currentRecipe)
+        }
+
+        holder.deleteButton.setOnClickListener {
+            listener.onDeleteClick(currentRecipe)
         }
     }
 
@@ -40,5 +47,6 @@ class RecipeAdapter(private val listener: OnItemClickListener) :
 
     inner class RecipeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val titleTextView: TextView = itemView.findViewById(R.id.tv_recipe_title)
+        val deleteButton: ImageButton = itemView.findViewById(R.id.btn_delete)
     }
 }

@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.kapt") // Correct plugin for Room
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -36,6 +36,11 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    // Enable ViewBinding
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -45,12 +50,12 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    // Room database
+    // Room
     implementation("androidx.room:room-runtime:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
 
-    // Lifecycle ViewModel and LiveData
+    // Lifecycle
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
 

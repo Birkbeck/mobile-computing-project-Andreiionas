@@ -22,7 +22,7 @@
             android:hint="@string/ingredients_hint"
             android:layout_marginTop="8dp" />
 
-        <!-- New Spinner for category -->
+        <!-- Spinner for category -->
         <Spinner
             android:id="@+id/spinner_category"
             android:layout_width="match_parent"
@@ -40,7 +40,16 @@
             android:id="@+id/btn_save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save"
+            android:text="@string/save"
             android:layout_marginTop="16dp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Recipe"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
     </LinearLayout>
 </ScrollView>

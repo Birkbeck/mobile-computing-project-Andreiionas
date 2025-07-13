@@ -8,4 +8,14 @@
     <string name="save">Save</string>
     <string name="add_recipe">Add New Recipe</string>
     <string name="recipe_title">Recipe Title</string>
+    <string name="delete">Delete</string>
+
+    <string-array name="recipe_categories">
+        <item>Breakfast</item>
+        <item>Brunch</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Desserts</item>
+        <item>Other</item>
+    </string-array>
 </resources>
